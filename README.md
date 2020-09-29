@@ -9,12 +9,6 @@
 - Do not push your code to sample bot repo.
 - Register your bot at https://profile.anthive.io/bots
 
-### Python 2
-- In [ANTHIVE](ANTHIVE) file set **lang** to **python2**
-
-### Python 3
-- In [ANTHIVE](ANTHIVE) file set **lang** to **python3**
-
 ## Debug
 - git push origin master
 - Register a new version of your bot from latest commits
@@ -26,10 +20,6 @@
 ### Run locally (not required)
 ```
 python run.py
-```
-or
-```
-python3 run.py
 ```
 
 It will start localhost server on port :7070 **Do not change port**
