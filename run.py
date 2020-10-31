@@ -8,7 +8,7 @@ try:  # For python 3
 except ImportError:  # For python 2
     from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
-ACTIONS = ["stay", "move", "eat", "load", "unload"]
+ACTIONS = ["stay", "move", "eat", "take", "put"]
 DIRECTIONS = ["up", "down", "right", "left"]
 
 
