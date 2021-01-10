@@ -29,10 +29,10 @@ class Handler(BaseHTTPRequestHandler):
 
         # loop through ants and give orders
         orders = []
-        for ant in hive['ants']:
+        for ant in hive["ants"]:
             order = {
-                "antId": ant['id'],
-                "act": ACTIONS[random.randint(0, 4)], # pick random action from array on line 12
+                "antId": ant["id"],
+                "act": "move",
                 "dir": DIRECTIONS[random.randint(0, 3)] # pick random direction from array on line 13
             }
             # add order to your response object from line 20
@@ -55,10 +55,10 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def run():
-    server_address = ('0.0.0.0', 7070) # starting listen for http calls on port :7070
+    # starting listen for http calls on port :7070
+    server_address = ('0.0.0.0', 7070) 
     httpd = HTTPServer(server_address, Handler)
     httpd.serve_forever()
-
 
 run()
 
